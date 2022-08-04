@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<div>
+
+    <head>
+        <title>Cloudfiles</title>
+        <link rel="stylesheet" href="../stylesheets/style.css" type="text/css">
+        <script src="javascripts/model-proxy.js"></script>
+        <meta charset="UTF-8">
+        <script src="javascripts/presenter.js"></script>
+
+        <script>
+           function inicio() {
+                let presenter = new FilesAppPresenter(new FilesAppProxy(), document);
+            }
+        </script>
+    </head>
+    <header>
+        <a href="http://localhost:3000"></a>
+    </header>
+
+    <body onload="inicio()">
+
+        <div id="imagen">
+            <a href="http://localhost:3000"> <img src="../images/logo.png" width="150px" height="100px" align="left"> </a>
+            <h1>CloudFiles</h1>
+        </div>
+
+
+        <nav>
+            <ul class="vertical">
+                <li><a href="http://localhost:3000">PÁGINA PRINCIPAL</a></li>
+        
+                <li><a href="formulario.html">INICIAR SESIÓN</a></li>
+
+        <section >
+                <div id="enlace">
+                    <nav>
+                        <button onclick="presenter.refresh()">Agregar archivo</button>
+                    </nav>
+                </div>
+            </div>
+            
+
+        </section>
+        <footer>
+            CloudFiles
+        </footer>
+        </span>
+    </body>
+
+
+    </html>
